@@ -4,3 +4,4 @@ dist
 *.local
 .direnv
 .DS_Store
+screenshots

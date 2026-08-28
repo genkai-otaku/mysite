@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tonosaki Seinosuke — ソフトウェアエンジニア</title>
+    <meta
+      name="description"
+      content="TypeScript と Python を軸に、フロントからバックエンドまで設計する。Tonosaki Seinosuke、千葉。"
+    />
+    <meta name="theme-color" content="#100816" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script>
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        document.documentElement.classList.add("is-static");
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">本文へ</a>
+    <canvas id="gl" aria-hidden="true"></canvas>
+    <div class="glow" aria-hidden="true"></div>
+
+    <div class="static-field" aria-hidden="true">
+      <div class="static-row">
+        <span class="static-plate">TypeScript</span>
+        <span class="static-plate">JavaScript</span>
+        <span class="static-plate">React</span>
+        <span class="static-plate">Astro</span>
+        <span class="static-plate">HTML / CSS</span>
+      </div>
+      <div class="static-row">
+        <span class="static-plate">NestJS</span>
+        <span class="static-plate">Node.js</span>
+        <span class="static-plate">Python</span>
+        <span class="static-plate">FastAPI</span>
+        <span class="static-plate">SQL</span>
+      </div>
+      <div class="static-row">
+        <span class="static-plate">Git</span>
+        <span class="static-plate">VSCode</span>
+        <span class="static-plate">Claude</span>
+        <span class="static-plate">Figma</span>
+        <span class="static-plate">Next.js</span>
+      </div>
+    </div>
+
+    <header class="site-nav" aria-label="サイト">
+      <div class="scroll-progress" aria-hidden="true"></div>
+      <a class="nav-logo" href="#top">TONOSAKI</a>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="nav-list"
+      >
+        メニュー
+      </button>
+      <ul id="nav-list" class="nav-list">
+        <li><a href="#top">ホーム</a></li>
+        <li><a href="#work">作品</a></li>
+        <li><a href="#profile">経歴</a></li>
+        <li><a href="#system">スキル</a></li>
+        <li><a href="#contact">連絡</a></li>
+      </ul>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero">
+        <div class="hero-inner">
+          <p class="hero-kicker">Software Engineer · Chiba</p>
+          <h1>Tonosaki Seinosuke</h1>
+          <p class="hero-lead">
+            TypeScript と Python を軸に、フロントからバックエンドまで設計する。
+            速くて、壊れにくいWebを組み立てる。
+          </p>
+          <ul class="hero-facts">
+            <li>25歳</li>
+            <li>経験 4年</li>
+            <li>千葉県</li>
+          </ul>
+          <div class="hero-ctas">
+            <a class="btn btn-fill" href="#profile">経歴を見る</a>
+            <a
+              class="btn btn-ghost"
+              href="https://github.com/seino914"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="wrap">
+          <p class="kicker">Works</p>
+          <h2>作品</h2>
+          <p class="lede">公開しているものだけ。ダウンロード数や賞は置かない。</p>
+          <div class="work-grid">
+            <a
+              class="work-card"
+              href="https://tonosaki-tech.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="work-index">01</span>
+              <h3>tonosaki-tech.com</h3>
+              <p>
+                現行ポートフォリオ。Next.js App Router
+                で経歴と技術を置いている。
+              </p>
+              <p class="work-tags">Next.js / TypeScript / Tailwind</p>
+            </a>
+            <a
+              class="work-card"
+              href="https://github.com/seino914/portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="work-index">02</span>
+              <h3>seino914 / portfolio</h3>
+              <p>その実装。About、Skills、Contact まで含めたソース。</p>
+              <p class="work-tags">TypeScript / React / Next.js</p>
+            </a>
+            <a
+              class="work-card"
+              href="https://github.com/seino914/dotfiles"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="work-index">03</span>
+              <h3>seino914 / dotfiles</h3>
+              <p>開発環境を Nix で宣言する。再現できる作業場。</p>
+              <p class="work-tags">Nix / zsh / VSCode</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="profile" class="section">
+        <div class="wrap">
+          <p class="kicker">Profile</p>
+          <h2>経歴</h2>
+          <div class="profile-grid">
+            <dl class="fact-list">
+              <div>
+                <dt>名前</dt>
+                <dd>Tonosaki Seinosuke</dd>
+              </div>
+              <div>
+                <dt>年齢</dt>
+                <dd>25</dd>
+              </div>
+              <div>
+                <dt>拠点</dt>
+                <dd>千葉県</dd>
+              </div>
+              <div>
+                <dt>職種</dt>
+                <dd>ソフトウェアエンジニア</dd>
+              </div>
+              <div>
+                <dt>経験</dt>
+                <dd>4年</dd>
+              </div>
+              <div>
+                <dt>軸</dt>
+                <dd>TypeScript / Python</dd>
+              </div>
+            </dl>
+            <ul class="spec-cards">
+              <li>
+                <h3>バックエンド</h3>
+                <p>TypeScript（Node.js、NestJS）、Python（FastAPI）</p>
+              </li>
+              <li>
+                <h3>高性能Web</h3>
+                <p>速度、データベース設計、セキュリティ</p>
+              </li>
+              <li>
+                <h3>ソリューション設計</h3>
+                <p>要件から実装まで、デザインパターンで組み立てる</p>
+              </li>
+            </ul>
+          </div>
+          <p class="note">
+            モダンなスタックと、読めるコードが好き。見た目より先に、持つ構造を決める。自称アニメ評論家でもある。肩書ではない。
+          </p>
+        </div>
+      </section>
+
+      <section id="system" class="section section-system">
+        <div class="system-head">
+          <p class="kicker">Skills</p>
+          <h2>スキル</h2>
+          <p class="lede">
+            ここにスキルの板が並ぶ。ポインタを近づけると年数と一言。指ならタップ。
+          </p>
+        </div>
+        <div id="system-stage" class="system-stage" aria-hidden="true"></div>
+        <ul id="skill-fallback" class="skill-fallback"></ul>
+      </section>
+
+      <section id="contact" class="section section-contact">
+        <div class="wrap">
+          <p class="kicker">Contact</p>
+          <h2>連絡先</h2>
+          <p class="lede">仕事の話はメールか、下のフォームへ。</p>
+          <div class="contact-grid">
+            <form id="contact-form" class="panel" novalidate>
+              <label>
+                <span>名前 <em class="req">必須</em></span>
+                <input
+                  name="name"
+                  type="text"
+                  required
+                  autocomplete="name"
+                  maxlength="80"
+                />
+              </label>
+              <label>
+                <span>メール <em class="req">必須</em></span>
+                <input
+                  name="email"
+                  type="email"
+                  required
+                  autocomplete="email"
+                  maxlength="120"
+                />
+              </label>
+              <label>
+                <span>電話 <em class="opt">任意</em></span>
+                <input
+                  name="tel"
+                  type="tel"
+                  autocomplete="tel"
+                  maxlength="24"
+                />
+              </label>
+              <label>
+                <span>本文 <em class="req">必須</em></span>
+                <textarea
+                  name="body"
+                  rows="5"
+                  required
+                  maxlength="2000"
+                ></textarea>
+              </label>
+              <p class="form-hint">このフォームはブラウザ内だけです。実送信はしません。</p>
+              <button class="btn btn-fill" type="submit">内容を確認する</button>
+            </form>
+            <aside class="panel contact-aside">
+              <p class="contact-meta">25歳 · ソフトウェアエンジニア · 千葉県</p>
+              <ul class="contact-links">
+                <li>
+                  <span>メール</span>
+                  <a href="mailto:tonosaki914@icloud.com"
+                    >tonosaki914@icloud.com</a
+                  >
+                </li>
+                <li>
+                  <span>X</span>
+                  <a
+                    href="https://x.com/tonosaki914"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >@tonosaki914</a
+                  >
+                </li>
+                <li>
+                  <span>GitHub</span>
+                  <a
+                    href="https://github.com/seino914"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >seino914</a
+                  >
+                </li>
+                <li>
+                  <span>Qiita</span>
+                  <a
+                    href="https://qiita.com/tonosaki914"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >tonosaki914</a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-foot">
+      <p>© Tonosaki Seinosuke</p>
+      <p>千葉県</p>
+    </footer>
+
+    <div id="skill-tip" role="tooltip" aria-live="polite" hidden>
+      <p class="tip-name"></p>
+      <p class="tip-years"></p>
+      <p class="tip-blurb"></p>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
